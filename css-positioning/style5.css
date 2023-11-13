@@ -15,16 +15,33 @@ body {
   width: 300px;
   height: 300px;
   background-color: yellow;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
 }
 
 .three {
   width: 200px;
   height: 200px;
   background-color: green;
+  position: relative;
+  bottom: 200px;
 }
 
 .four {
   width: 100px;
   height: 100px;
   background-color: blue;
+  /* Could fix this to be in top right corner, but would stay with scroll */
+  position: fixed;
+  top: 5px;
+  left: 5px;
+  /* Could make aboslute positioned, but next ancestor is positioned and
+  would have to hard punch values to be away from this ancestor. This would
+  only work for specific screen sizes, as soon as this changes the values
+  would not achieve inteded purpose */
+  /* position: absolute;
+  top: -500px;
+  left: -500px; */
+  /* Best solution would likely be to change HTML structure  */
 }

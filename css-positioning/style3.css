@@ -21,7 +21,7 @@ body {
   width: 200px;
   height: 200px;
   background-color: green;
-  position: relative;
+  position: absolute;
   top: 200px;
   left:400px;
 }
